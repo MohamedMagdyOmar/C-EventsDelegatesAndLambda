@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsDelegatesAndLambda", "EventsDelegatesAndLambda\EventsDelegatesAndLambda.csproj", "{F0EAC9BB-504F-4035-97E0-B873F1FA0797}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWindowsEvents", "BasicWindowsEvents\BasicWindowsEvents.csproj", "{3D022145-06A6-4F9A-8C80-F1ADD6640577}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3062324C-7D62-4B7B-A905-2ECEF01FD96B}"
+	ProjectSection(SolutionItems) = preProject
+		Module-1 ReadMe.txt = Module-1 ReadMe.txt
+		C:\Users\Mohamed Magdy\Desktop\ReadMe.docx = C:\Users\Mohamed Magdy\Desktop\ReadMe.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,10 @@ Global
 		{F0EAC9BB-504F-4035-97E0-B873F1FA0797}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0EAC9BB-504F-4035-97E0-B873F1FA0797}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0EAC9BB-504F-4035-97E0-B873F1FA0797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D022145-06A6-4F9A-8C80-F1ADD6640577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D022145-06A6-4F9A-8C80-F1ADD6640577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D022145-06A6-4F9A-8C80-F1ADD6640577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D022145-06A6-4F9A-8C80-F1ADD6640577}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
