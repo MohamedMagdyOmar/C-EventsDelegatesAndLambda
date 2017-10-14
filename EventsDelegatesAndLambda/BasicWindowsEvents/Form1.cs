@@ -16,5 +16,21 @@ namespace BasicWindowsEvents
         {
             InitializeComponent();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("Current index" + CountriesComboBox.SelectedIndex.ToString());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Clicked me");
+        }
+
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show(e.X.ToString());
+        }
     }
 }
