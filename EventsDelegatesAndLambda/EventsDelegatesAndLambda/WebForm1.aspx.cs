@@ -13,5 +13,15 @@ namespace EventsDelegatesAndLambda
         {
 
         }
+
+        protected void Submit_Click(object sender, EventArgs e)
+        {
+            OutputLabel.Text = "Clicked Me.";
+        }
+
+        protected void CountriesDropDown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OutputLabel.Text = CountriesDropDown.SelectedIndex.ToString();
+        }
     }
 }
