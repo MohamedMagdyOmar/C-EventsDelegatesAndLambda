@@ -12,12 +12,13 @@ using System.Threading.Tasks;
 namespace ConsoleApp1
 {
     // the word "Handler" is typically used when naming the delegates
-    public delegate int workPerformedHandler(int hours, WorkType workType);
-
+    //public delegate int workPerformedHandler(int hours, WorkType workType);
+    //public delegate int workPerformedHandler(object sender, WorkPerformedEventArgs e);
     public class Worker
     {   // now we need a way to raise below 2 events, and
         // pass the data on pipeline to event listeners
-        public event workPerformedHandler WorkPerformed;
+        //public event workPerformedHandler WorkPerformed;
+        public event EventHandler<WorkPerformedEventArgs> WorkPerformed;
         public event EventHandler WorkCompleted;
         public void DoWork(int hours, WorkType workType)
         {
@@ -45,11 +46,13 @@ namespace ConsoleApp1
             //}
 
             // second way
-            var del = WorkPerformed as workPerformedHandler;
+            //var del = WorkPerformed as workPerformedHandler;
+            var del = WorkPerformed as EventHandler<WorkPerformedEventArgs>;
             if (del != null)
             {
                 // raising an event
-                del(hours, workType);
+                //del(hours, workType);
+                del(this, new WorkPerformedEventArgs(hours, workType));
             }
         }
 
