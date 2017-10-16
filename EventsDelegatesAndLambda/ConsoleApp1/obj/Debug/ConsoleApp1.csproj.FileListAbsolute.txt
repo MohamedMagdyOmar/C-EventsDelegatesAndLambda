@@ -1,0 +1,7 @@
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
