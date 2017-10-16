@@ -8,8 +8,6 @@ namespace ConsoleApp1
 {
     class Program
     {
-        // the word "Handler" is typically used when naming the delegates
-        public delegate int workPerformedHandler(int hours, WorkType workType);
 
         static void Main(string[] args)
         {
@@ -23,8 +21,9 @@ namespace ConsoleApp1
             //del1 += del3;
             del1 += del2 + del3;
 
-
+            // it will return int value of the last method only because it is the last method to be invoked
             int finalHours = DoWork(del1);
+
             Console.WriteLine(finalHours);
             //del2(10, WorkType.PlayingFootball);
             Console.ReadLine();
@@ -55,11 +54,12 @@ namespace ConsoleApp1
             return hours + 3;
         }
 
-        public enum WorkType
-        {
-            Golf,
-            Meetings,
-            PlayingFootball
-        }
+    }
+
+    public enum WorkType
+    {
+        Golf,
+        Meetings,
+        PlayingFootball
     }
 }
