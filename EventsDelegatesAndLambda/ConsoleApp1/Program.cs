@@ -29,9 +29,11 @@ namespace ConsoleApp1
             var worker = new Worker();
             //worker.WorkPerformed += new EventHandler<WorkPerformedEventArgs>(worker_workPerformed);
             //worker.WorkCompleted += new EventHandler(work_workCompleted);
-            worker.WorkPerformed += worker_workPerformed;
+            worker.WorkPerformed += delegate(object sender, WorkPerformedEventArgs e)
+            { Console.WriteLine("Hours worker: " + e.Hours + " " + e.WorkType); };
+
             worker.WorkCompleted += work_workCompleted;
-            worker.WorkCompleted -= work_workCompleted;
+            //worker.WorkCompleted -= work_workCompleted;
             worker.DoWork(8, WorkType.PlayingFootball);
             Console.ReadLine();
         }
