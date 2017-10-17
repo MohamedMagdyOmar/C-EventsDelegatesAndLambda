@@ -27,7 +27,9 @@ namespace ConsoleApp1
             //Console.WriteLine(finalHours);
             ////del2(10, WorkType.PlayingFootball);
             var worker = new Worker();
-            
+            worker.WorkPerformed += new EventHandler<WorkPerformedEventArgs>(worker_workPerformed);
+            worker.WorkCompleted += new EventHandler(work_workCompleted);
+            worker.DoWork(8, WorkType.PlayingFootball);
             Console.ReadLine();
         }
 
@@ -37,6 +39,16 @@ namespace ConsoleApp1
         //{
         //    return del(5, WorkType.Golf);
         //}
+
+        public static void worker_workPerformed(object sender, WorkPerformedEventArgs e)
+        {
+            Console.WriteLine("Hours worker: " + e.Hours + " " + e.WorkType);
+        }
+
+        public static void work_workCompleted(object sender, EventArgs e)
+        {
+            Console.WriteLine("Worker Is Done");
+        }
 
         public static int WorkPerformed1(int hours, WorkType workType)
         {

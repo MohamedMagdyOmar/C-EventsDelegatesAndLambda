@@ -24,11 +24,7 @@ namespace ConsoleApp1
         {
             for(int i = 0; i < hours; i++)
             {
-                // Raise Event Here for each worked hour
-                // we can invoke the event here, but the problem of below
-                // line that if no listener are not attached it will fire exception.
-                // the appropriate way is to add a seperate method for each event you want to raise
-                //WorkPerformed(i + 1, workType);
+                System.Threading.Thread.Sleep(1000);
                 OnWorkPerformed(i + 1, workType);
             }
             //Raise event here for work completed
@@ -38,15 +34,6 @@ namespace ConsoleApp1
         // event raising method
         protected virtual void OnWorkPerformed(int hours, WorkType workType)
         {
-            // now we need to raise the events, and we have 2 techniques
-            // first way
-            //if(WorkPerformed != null)
-            //{
-            //    WorkPerformed(hours, workType);
-            //}
-
-            // second way
-            //var del = WorkPerformed as workPerformedHandler;
             var del = WorkPerformed as EventHandler<WorkPerformedEventArgs>;
             if (del != null)
             {
