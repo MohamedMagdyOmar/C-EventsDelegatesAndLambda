@@ -22,7 +22,10 @@ namespace ConsoleApp1
             Action<int, int> myAdditionAction = (x, y) => Console.WriteLine(x + y);
             Action<int, int> myMulAction = (x, y) => Console.WriteLine(x * y);
 
-            m1.ProcessAction(2, 3, myAdditionAction);
+            Func<int, int, int> myAddFunc = (x, y) => x + y;
+            Func<int, int, int> myMulFunc = (x, y) => x * y;
+
+            m1.ProcessAction(2, 3, myAddFunc);
             //workPerformedHandler del1 = new workPerformedHandler(WorkPerformed1);
             //workPerformedHandler del2 = new workPerformedHandler(WorkPerformed2);
             //workPerformedHandler del3 = new workPerformedHandler(WorkPerformed3);

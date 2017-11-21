@@ -24,5 +24,12 @@ namespace ConsoleApp1
             action(x, y);
             Console.WriteLine("Action has been processed");
         }
+
+        public void ProcessAction(int x, int y, Func<int, int, int> action)
+        {
+            action(x, y);
+            Console.WriteLine(action(x, y));
+            Console.WriteLine("Func has been processed");
+        }
     }
 }
