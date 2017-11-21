@@ -29,10 +29,10 @@ namespace ConsoleApp1
             var worker = new Worker();
             //worker.WorkPerformed += new EventHandler<WorkPerformedEventArgs>(worker_workPerformed);
             //worker.WorkCompleted += new EventHandler(work_workCompleted);
-            worker.WorkPerformed += delegate(object sender, WorkPerformedEventArgs e)
+            worker.WorkPerformed += (s,e) =>
             { Console.WriteLine("Hours worker: " + e.Hours + " " + e.WorkType); };
 
-            worker.WorkCompleted += work_workCompleted;
+            worker.WorkCompleted += (s,e) => Console.WriteLine("Worker Is Done");
             //worker.WorkCompleted -= work_workCompleted;
             worker.DoWork(8, WorkType.PlayingFootball);
             Console.ReadLine();
@@ -45,15 +45,15 @@ namespace ConsoleApp1
         //    return del(5, WorkType.Golf);
         //}
 
-        public static void worker_workPerformed(object sender, WorkPerformedEventArgs e)
-        {
-            Console.WriteLine("Hours worker: " + e.Hours + " " + e.WorkType);
-        }
+        //public static void worker_workPerformed(object sender, WorkPerformedEventArgs e)
+        //{
+        //    Console.WriteLine("Hours worker: " + e.Hours + " " + e.WorkType);
+        //}
 
-        public static void work_workCompleted(object sender, EventArgs e)
-        {
-            Console.WriteLine("Worker Is Done");
-        }
+        //public static void work_workCompleted(object sender, EventArgs e)
+        //{
+        //    Console.WriteLine("Worker Is Done");
+        //}
 
         public static int WorkPerformed1(int hours, WorkType workType)
         {
