@@ -18,7 +18,11 @@ namespace ConsoleApp1
             ProcessData m1 = new ProcessData();
             m1.Process(2, 3, mulDel);
 
+            // notice that here you do not need to define the above delegate
+            Action<int, int> myAdditionAction = (x, y) => Console.WriteLine(x + y);
+            Action<int, int> myMulAction = (x, y) => Console.WriteLine(x * y);
 
+            m1.ProcessAction(2, 3, myAdditionAction);
             //workPerformedHandler del1 = new workPerformedHandler(WorkPerformed1);
             //workPerformedHandler del2 = new workPerformedHandler(WorkPerformed2);
             //workPerformedHandler del3 = new workPerformedHandler(WorkPerformed3);
