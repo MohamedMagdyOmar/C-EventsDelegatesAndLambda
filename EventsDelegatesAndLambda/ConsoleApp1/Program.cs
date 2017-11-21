@@ -6,11 +6,19 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
+    public delegate int BizRulesDelegate(int x, int y);
     class Program
     {
 
         static void Main(string[] args)
         {
+            BizRulesDelegate addDel = (x, y) => x + y;
+            BizRulesDelegate mulDel = (x, y) => x * y;
+
+            ProcessData m1 = new ProcessData();
+            m1.Process(2, 3, mulDel);
+
+
             //workPerformedHandler del1 = new workPerformedHandler(WorkPerformed1);
             //workPerformedHandler del2 = new workPerformedHandler(WorkPerformed2);
             //workPerformedHandler del3 = new workPerformedHandler(WorkPerformed3);
