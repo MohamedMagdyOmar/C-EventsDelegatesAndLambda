@@ -1,0 +1,10 @@
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\BasicWindowsEvents\bin\Debug\BasicWindowsEvents.exe.config
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\BasicWindowsEvents\bin\Debug\BasicWindowsEvents.exe
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\BasicWindowsEvents\bin\Debug\BasicWindowsEvents.pdb
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\BasicWindowsEvents\obj\Debug\BasicWindowsEvents.csprojResolveAssemblyReference.cache
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\BasicWindowsEvents\obj\Debug\BasicWindowsEvents.Form1.resources
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\BasicWindowsEvents\obj\Debug\BasicWindowsEvents.Properties.Resources.resources
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\BasicWindowsEvents\obj\Debug\BasicWindowsEvents.csproj.GenerateResource.Cache
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\BasicWindowsEvents\obj\Debug\BasicWindowsEvents.csproj.CoreCompileInputs.cache
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\BasicWindowsEvents\obj\Debug\BasicWindowsEvents.exe
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\BasicWindowsEvents\obj\Debug\BasicWindowsEvents.pdb
