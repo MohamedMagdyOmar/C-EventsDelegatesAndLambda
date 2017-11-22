@@ -6,11 +6,44 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
+    public delegate int BizRulesDelegate(int x, int y);
     class Program
     {
 
         static void Main(string[] args)
         {
+            var custs = new List<Customer>
+            {
+                new Customer { City = "Phoneix", FirstName = "John", LastName = "John", Id = 1 },
+                new Customer { City = "Phoneix", FirstName = "Jane", LastName = "John", Id = 2 },
+                new Customer { City = "Seattle", FirstName = "Suki", LastName = "Pizzoro", Id = 3 },
+                new Customer { City = "New York City", FirstName = "Michelle", LastName = "Smith", Id = 4 },
+            };
+
+            var test = custs.Where((cu) => cu.City == "Phoneix" && cu.Id < 2)
+                            .OrderBy(c => c.FirstName);
+            foreach(var cust in test)
+            {
+                Console.WriteLine(cust.FirstName);
+            }
+
+
+
+
+            BizRulesDelegate addDel = (x, y) => x + y;
+            BizRulesDelegate mulDel = (x, y) => x * y;
+
+            ProcessData m1 = new ProcessData();
+            m1.Process(2, 3, mulDel);
+
+            // notice that here you do not need to define the above delegate
+            Action<int, int> myAdditionAction = (x, y) => Console.WriteLine(x + y);
+            Action<int, int> myMulAction = (x, y) => Console.WriteLine(x * y);
+
+            Func<int, int, int> myAddFunc = (x, y) => x + y;
+            Func<int, int, int> myMulFunc = (x, y) => x * y;
+
+            m1.ProcessAction(2, 3, myAddFunc);
             //workPerformedHandler del1 = new workPerformedHandler(WorkPerformed1);
             //workPerformedHandler del2 = new workPerformedHandler(WorkPerformed2);
             //workPerformedHandler del3 = new workPerformedHandler(WorkPerformed3);
@@ -29,10 +62,10 @@ namespace ConsoleApp1
             var worker = new Worker();
             //worker.WorkPerformed += new EventHandler<WorkPerformedEventArgs>(worker_workPerformed);
             //worker.WorkCompleted += new EventHandler(work_workCompleted);
-            worker.WorkPerformed += delegate(object sender, WorkPerformedEventArgs e)
+            worker.WorkPerformed += (s,e) =>
             { Console.WriteLine("Hours worker: " + e.Hours + " " + e.WorkType); };
 
-            worker.WorkCompleted += work_workCompleted;
+            worker.WorkCompleted += (s,e) => Console.WriteLine("Worker Is Done");
             //worker.WorkCompleted -= work_workCompleted;
             worker.DoWork(8, WorkType.PlayingFootball);
             Console.ReadLine();
@@ -45,15 +78,15 @@ namespace ConsoleApp1
         //    return del(5, WorkType.Golf);
         //}
 
-        public static void worker_workPerformed(object sender, WorkPerformedEventArgs e)
-        {
-            Console.WriteLine("Hours worker: " + e.Hours + " " + e.WorkType);
-        }
+        //public static void worker_workPerformed(object sender, WorkPerformedEventArgs e)
+        //{
+        //    Console.WriteLine("Hours worker: " + e.Hours + " " + e.WorkType);
+        //}
 
-        public static void work_workCompleted(object sender, EventArgs e)
-        {
-            Console.WriteLine("Worker Is Done");
-        }
+        //public static void work_workCompleted(object sender, EventArgs e)
+        //{
+        //    Console.WriteLine("Worker Is Done");
+        //}
 
         public static int WorkPerformed1(int hours, WorkType workType)
         {
