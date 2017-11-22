@@ -12,6 +12,24 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
+            var custs = new List<Customer>
+            {
+                new Customer { City = "Phoneix", FirstName = "John", LastName = "John", Id = 1 },
+                new Customer { City = "Phoneix", FirstName = "Jane", LastName = "John", Id = 2 },
+                new Customer { City = "Seattle", FirstName = "Suki", LastName = "Pizzoro", Id = 3 },
+                new Customer { City = "New York City", FirstName = "Michelle", LastName = "Smith", Id = 4 },
+            };
+
+            var test = custs.Where((cu) => cu.City == "Phoneix" && cu.Id < 2)
+                            .OrderBy(c => c.FirstName);
+            foreach(var cust in test)
+            {
+                Console.WriteLine(cust.FirstName);
+            }
+
+
+
+
             BizRulesDelegate addDel = (x, y) => x + y;
             BizRulesDelegate mulDel = (x, y) => x * y;
 
