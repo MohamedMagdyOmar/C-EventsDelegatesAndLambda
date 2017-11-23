@@ -23,8 +23,12 @@ namespace CommunicationBetweenControls.UserControls
         public JobDetails()
         {
             InitializeComponent();
+
+            // second component: subscribe to the event
+            // note: since "Mediator" is singleton, so "Job Details" and "EmployeesOnJob" subcribe on same event
             Mediator.GetInstance().JobChanged += (s, e) =>
             {
+                // forth component: event handler
                 this.DataContext = e.Job;
             };
         }

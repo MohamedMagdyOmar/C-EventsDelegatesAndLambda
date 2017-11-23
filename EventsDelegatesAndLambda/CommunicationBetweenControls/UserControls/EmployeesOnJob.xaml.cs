@@ -48,9 +48,11 @@ namespace CommunicationBetweenControls.UserControls
         {
             InitializeComponent();
 
-            // subscribe to the event, so when the job is changed we call the bind data
+            // second component: subscribe to the event
+            // note: since "Mediator" is singleton, so "Job Details" and "EmployeesOnJob" subcribe on same event
             Mediator.GetInstance().JobChanged += (s, e) =>
             {
+                // forth component: event handler
                 BindData(e.Job);
             };
         }
