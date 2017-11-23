@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationBetweenControls", "CommunicationBetweenControls\CommunicationBetweenControls.csproj", "{0A686C4D-F942-4133-9CC9-BEF43220A2FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadsAndDelegates", "ThreadsAndDelegates\ThreadsAndDelegates.csproj", "{B34B9D88-721E-450B-8BAB-DD53435A300C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0A686C4D-F942-4133-9CC9-BEF43220A2FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A686C4D-F942-4133-9CC9-BEF43220A2FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A686C4D-F942-4133-9CC9-BEF43220A2FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B34B9D88-721E-450B-8BAB-DD53435A300C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B34B9D88-721E-450B-8BAB-DD53435A300C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B34B9D88-721E-450B-8BAB-DD53435A300C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B34B9D88-721E-450B-8BAB-DD53435A300C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
