@@ -1,7 +1,6 @@
 E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\CommunicationBetweenControls\bin\Debug\CommunicationBetweenControls.exe.config
 E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\CommunicationBetweenControls\bin\Debug\CommunicationBetweenControls.exe
 E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\CommunicationBetweenControls\bin\Debug\CommunicationBetweenControls.pdb
-E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\CommunicationBetweenControls\obj\Debug\CommunicationBetweenControls.csprojResolveAssemblyReference.cache
 E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\CommunicationBetweenControls\obj\Debug\MainWindow.g.cs
 E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\CommunicationBetweenControls\obj\Debug\UserControls\EmployeesOnJob.g.cs
 E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\CommunicationBetweenControls\obj\Debug\UserControls\JobDetails.g.cs

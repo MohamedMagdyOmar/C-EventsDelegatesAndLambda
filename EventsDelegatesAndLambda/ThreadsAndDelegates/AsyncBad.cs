@@ -15,15 +15,15 @@ namespace ThreadsAndDelegates
     {
         // 2-
         delegate void UpdateProgressDelegate (int val);
-        public AsyncBad()
-        {
-            InitializeComponent();
-        }
+        //public AsyncBad()
+        //{
+        //    InitializeComponent();
+        //}
 
-        public static void main()
-        {
-            Application.Run(new AsyncBad());
-        }
+        //public static void main()
+        //{
+        //    //Application.Run(new AsyncBad());
+        //}
 
         private void StartButton_Click(object sender, EventArgs e)
         {
