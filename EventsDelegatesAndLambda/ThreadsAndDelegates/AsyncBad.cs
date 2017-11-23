@@ -32,7 +32,6 @@ namespace ThreadsAndDelegates
             var progDel = new UpdateProgressDelegate(StartProgress);
 
             //4- BeginInvoke will create a seperate thread, to make this delegate call "StartProgress" in the background (async process)
-            //
             progDel.BeginInvoke(100, null, null);
             MessageBox.Show("Done with Operation");
         }
