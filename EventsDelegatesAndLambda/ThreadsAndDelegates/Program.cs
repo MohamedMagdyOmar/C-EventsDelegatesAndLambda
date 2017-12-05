@@ -16,7 +16,7 @@ namespace ThreadsAndDelegates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BackgroundWorkerDemo());
+            Application.Run(new UsingAThread());
         }
     }
 }
