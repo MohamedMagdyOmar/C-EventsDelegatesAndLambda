@@ -1,0 +1,12 @@
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\bin\Debug\ThreadsAndDelegates.exe.config
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\bin\Debug\ThreadsAndDelegates.exe
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\bin\Debug\ThreadsAndDelegates.pdb
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\obj\Debug\ThreadsAndDelegates.AsyncBad.resources
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\obj\Debug\ThreadsAndDelegates.AsyncGood.resources
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\obj\Debug\ThreadsAndDelegates.BackgroundWorkerDemo.resources
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\obj\Debug\ThreadsAndDelegates.Properties.Resources.resources
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\obj\Debug\ThreadsAndDelegates.UsingAThread.resources
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\obj\Debug\ThreadsAndDelegates.csproj.GenerateResource.Cache
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\obj\Debug\ThreadsAndDelegates.csproj.CoreCompileInputs.cache
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\obj\Debug\ThreadsAndDelegates.exe
+E:\Repos\C#EventsDelegatesAndLambda\C-EventsDelegatesAndLambda\EventsDelegatesAndLambda\ThreadsAndDelegates\obj\Debug\ThreadsAndDelegates.pdb

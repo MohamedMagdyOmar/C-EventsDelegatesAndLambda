@@ -1,0 +1,14 @@
+﻿1- these widgets (EmployeesOnJob, JonOnDetails, and Jobs), should be added dynamically to the "MainWindow"
+2- we need the data to be dynamically loaded when the user change drop down menu.
+3- we need our code to be loosly coupled, so we need "EmployeesOnJob" and "JobDetails" to do not know any think about "Job Combo Box".
+4- so we need "Job", "EmployeesOnJob", "JobDetails" to communicate in a way such that no one of them know anything about each other.
+
+what we will do is
+5- when user change the job in "drop down menu", we pass this job into "Mediator", so we are going to use "Mediator Pattern"
+6- "Job", "EmployeesOnJob", "JobDetails" will know about "mediator", but they do not know any thing about each other.
+7- so "mediator" acts as middle man between them.
+
+8- firstly we will create "Mediator" class that will handle the communication between 3 classes.
+9- when the job is changed, the selected job will be send to the mediator.
+10- the mediator will raise event, so any listener will know that the job is changed and it will recieve that job, and update their screen.
+11- when the job changed we need to call the mediator, so in "Job" the function "JobsComboBox_SelectionChanged" will call the event handler in the mediator

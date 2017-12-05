@@ -1,0 +1,1 @@
+﻿1- the main object is "Async Delegate", which is actually hoo to invoke a delegate and cause it to run on a seperate thread.
